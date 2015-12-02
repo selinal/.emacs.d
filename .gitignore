@@ -2,6 +2,10 @@ auto-save-list/
 elpa/
 backups/
 var/
+etc/
+lib/
+packs/
 config.el
 places
 recentf
+projectile-bookmarks.eld

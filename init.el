@@ -12,9 +12,7 @@
 ;;; Set up package
 (require 'package)
 (add-to-list 'package-archives
-             '("melpa" . "https://melpa.org/packages/") t)
-(add-to-list 'package-archives
-             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+             '("melpa" . "http://melpa.org/packages/") t)
 (package-initialize)
 
 ;;; Bootstrap use-package
@@ -32,4 +30,3 @@
 
 ;;; Load the config
 (org-babel-load-file (concat user-emacs-directory "config.org"))
-
