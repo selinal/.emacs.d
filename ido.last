@@ -1,0 +1,30 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("c:/Users/selinal/AppData/Roaming/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "c:/Users/selinal/AppData/Roaming/.emacs.d/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "config.org"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("c:/Users/selinal/AppData/Roaming/.emacs.d/" (22118 34071 0 0) "var/" "recentf" "README.md" "places" "init.el" "elpa/" "custom.el" "config.org" "config.el" "backups/" "auto-save-list/" "ac-comphist.dat" ".gitignore" ".git/" "../" "./")
+
+ ("c:/Users/selinal/AppData/Roaming/" (22108 23290 0 0) "____.emacs.el___" "Yandex/" "winscp.rnd" "WebEx Connect/" "webex/" "VMware/" "ViberPC/" "updatetool/" "TortoiseSVN/" "Thunderbird/" "TeamViewer/" "Subversion/" "Sublime Text 3/" "SQL Developer/" "Sparx Systems/" "Softland/" "Skype/" "Rim.DesktopHelper.Exception.log" "Rim.Desktop.HttpServerSetup.log" "Rim.Desktop.Exception.log" "Research In Motion/" "Racket/" "postgresql/" "pomodairo.1041936B6D0707C313E2E169D771193A7DFBADCC.1/" "pomodairo/" "PLSQL Developer/" "PDF Writer/" "Oracle SQL Developer Data Modeler/" "Notepad++/" "NetSarang/" "NetBeans/" "Mozilla/" "Microsoft/" "Media Player Classic/" "Media Center Programs/" "Macromedia/" "LibreOffice/" "Kodi/" "JetBrains/" "JabberWerxCPP/" "IrfanView/" "IHCI.OfflineClient/" "Identities/" "Hudson Tray Tracker/" "HK-Software/" "GitHub/" "FileZilla/" "Dropbox/" "Cisco/" "Bleep/" "BitTorrent Sync/" "Apple Computer/" "Adobe/" ".visualvm/" ".emacs.d/" "../" "./")
+
+ ("c:/Users/" (22107 64811 0 0) "shabalkinan/" "selinal.WSM3-658/" "selinal/" "Public/" "desktop.ini" "Default User/" "Default/" "All Users/" "Administrator/" "1/" "../" "./")
+
+ ("c:/Users/selinal/" (22118 33839 0 0) "YandexDisk/" "workspace/" "VirtualBox VMs/" "Videos/" "Tracing/" "tempLoadUI/" "Templates/" "Start Menu/" "soapui-settings.xml" "SendTo/" "Searches/" "Saved Games/" "Recent/" "PrintHood/" "pomodairo-1.1.db" "Pictures/" "ntuser.pol" "ntuser.ini" "NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "NetHood/" "net/" "My Documents/" "Music/" "Local Settings/" "Links/" "intellij-soapui-workspace.xml" "InstallAnywhere/" "gradle-app.setting" "Favorites/" "Downloads/" "Documents/" "Desktop/" "default-soapui-workspace.xml" "Cookies/" "Contacts/" "Application Data/" "AppData/" ".VirtualBox/" ".tomighty/" ".thumbnails/" ".swt/" ".sts/" ".ssh/" ".scala_history" ".psrios/" ".netcracker/" ".net.sf.jadclipse/" ".nbprofiler/" ".m2/" ".lein/" ".ivy2/" ".IntelliJIdea12/" ".groovy/" ".gradle/" ".gitconfig" ".gimp-2.8/" ".gfclient/" ".android/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
