@@ -93,18 +93,7 @@ Here's some configuration for [[https://github.com/bbatsov/solarized-emacs/][bba
 
 [[http://levien.com/type/myfonts/inconsolata.html][Inconsolata]] is a nice monospaced font.
 
-To install it on OS X, you can use Homebrew with [[http://caskroom.io/][Homebrew Cask]].
-
-;;#+begin_src sh :tangle no
-;;# You may need to run these two lines if you haven't set up Homebrew
-;;# Cask and its fonts formula.
-;;brew install caskroom/cask/brew-cask
-;;brew tap caskroom/fonts
-
-;;brew cask install font-inconsolata
-;;#+end_src
-
-And here's how we tell Emacs to use the font we want to use.
+Here's how we tell Emacs to use the font we want to use.
 
 #+begin_src emacs-lisp
 (add-to-list 'default-frame-alist
@@ -341,11 +330,11 @@ consistent as it doesn't pad source blocks with leading spaces.
 
 Pandoc converts between a huge number of different file formats. 
 
-#+begin_src emacs-lisp
+;;#+begin_src emacs-lisp
 (use-package ox-pandoc
   :no-require t
   :ensure t)
-#+end_src
+;;#+end_src
 
 * Tramp
 
@@ -466,7 +455,6 @@ what I have them set to (with respect to Dvorak, of course).
   (ace-window-display-mode)
   :bind ("s-o" . ace-window))
 #+end_src
-#+end_src
 
 ** Android mode
 
@@ -504,15 +492,15 @@ This package displays function signatures in the mode line.
   :defer t
   :init (add-hook 'cider-mode-hook #'clj-refactor-mode)
 ;;  :diminish subword-mode
-  :config
-  (setq nrepl-log-messages t                  
-        cider-repl-display-in-current-window t
-        cider-repl-use-clojure-font-lock t    
-        cider-prompt-save-file-on-load 'always-save
-        cider-font-lock-dynamically '(macro core function var)
-        nrepl-hide-special-buffers t            
-        cider-overlays-use-font-lock t)         
-  (cider-repl-toggle-pretty-printing))
+;;  :config
+;;  (setq nrepl-log-messages t                  
+;;        cider-repl-display-in-current-window t
+;;        cider-repl-use-clojure-font-lock t    
+;;        cider-prompt-save-file-on-load 'always-save
+;;        cider-font-lock-dynamically '(macro core function var)
+;;        nrepl-hide-special-buffers t            
+;;        cider-overlays-use-font-lock t)         
+;;  (cider-repl-toggle-pretty-printing))
 #+end_src
 
 ** Dash
