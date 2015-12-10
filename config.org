@@ -500,7 +500,8 @@ This package displays function signatures in the mode line.
 ;;        cider-font-lock-dynamically '(macro core function var)
 ;;        nrepl-hide-special-buffers t            
 ;;        cider-overlays-use-font-lock t)         
-;;  (cider-repl-toggle-pretty-printing))
+;;  (cider-repl-toggle-pretty-printing)
+)
 #+end_src
 
 ** Dash
