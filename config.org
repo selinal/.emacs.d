@@ -728,13 +728,26 @@ Workspaces in Emacs.
   :config (persp-mode))
 #+end_src
 
-** Projectile
+** Line numbers
+
+#+begin_src emacs-lisp
+(use-package linum
+  :ensure t
+  :config (progn (global-linum-mode t)))
+#+end_src
+
+** Projectile + Neotree
 
 #+BEGIN_QUOTE
 Project navigation and management library for Emacs.
 #+END_QUOTE
 http://batsov.com/projectile/
 
+#+begin_src emacs-lisp
+(use-package neotree
+  :ensure t
+  :bind (("<f8>" . neotree-toggle)))
+#+end_src
 
 #+begin_src emacs-lisp
 (use-package projectile
@@ -745,6 +758,7 @@ http://batsov.com/projectile/
   (progn
     (projectile-global-mode t)
     (setq projectile-enable-caching t)
+    (setq projectile-switch-project-action 'neotree-projectile-action)
     (use-package ag
       :commands ag
       :ensure t)))
