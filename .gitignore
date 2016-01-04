@@ -13,3 +13,5 @@ ac-comphist.dat
 ido.last
 ido.last
 *.last
+%backup%~
+*.cache
