@@ -13,4 +13,8 @@ ac-comphist.dat
 ido.last
 ido.last
 *.last
+<<<<<<< HEAD
+%backup%~
+=======
+>>>>>>> refs/remotes/origin/master
 *.cache

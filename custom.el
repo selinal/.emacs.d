@@ -37,6 +37,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ 
  '(helm-bookmark-directory ((t (:inherit helm-ff-directory))))
  '(helm-buffer-directory ((t (:inherit helm-ff-directory))))
- '(helm-ff-directory ((t (:foreground "HotPink")))))
+ '(helm-ff-directory ((t (:foreground "HotPink"))))
+ )
