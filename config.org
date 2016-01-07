@@ -114,6 +114,7 @@ These functions are useful. Activate them.
 (setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
 (setq auto-save-file-name-transforms '((".*" "~/.emacs.d/auto-save-list/" t)))
 
+<<<<<<< HEAD
 ;;UTF-8 please
 (setq locale-coding-system 'utf-8) ; pretty
 (set-terminal-coding-system 'utf-8) ; pretty
@@ -121,6 +122,18 @@ These functions are useful. Activate them.
 (set-selection-coding-system 'utf-8) ; please
 (prefer-coding-system 'utf-8) ; with sugar on top
 (setq-default indent-tabs-mode nil)
+=======
+#+begin_src emacs-lisp
+;;(setq locale-coding-system 'utf-8) ; pretty
+;;(set-terminal-coding-system 'utf-8) ; pretty
+;;(set-keyboard-coding-system 'utf-8) ; pretty
+;;(set-selection-coding-system 'utf-8) ; please
+;;(prefer-coding-system 'utf-8) ; with sugar on top
+;;(setq-default indent-tabs-mode nil)
+#+end_src
+
+** Turn off the blinking cursor
+>>>>>>> refs/remotes/origin/master
 
 ;;Turn off the blinking cursor
 (blink-cursor-mode -1)
@@ -190,7 +203,7 @@ source: [[http://whattheemacsd.com/sane-defaults.el-01.html][Magnars Sveen]]
   :init
   (progn
     (recentf-mode t)
-    (setq recentf-max-saved-items 200)
+    (setq recentf-max-saved-items 50)
 
     (defun ido-recentf-open ()
       "Use `ido-completing-read' to \\[find-file] a recent file"
@@ -202,6 +215,15 @@ source: [[http://whattheemacsd.com/sane-defaults.el-01.html][Magnars Sveen]]
     (bind-key "C-x C-r" 'ido-recentf-open)))
 #+end_src
 
+<<<<<<< HEAD
+=======
+* Tramp
+
+#+begin_src emacs-lisp :tangle no
+(use-package tramp)
+#+end_src
+
+>>>>>>> refs/remotes/origin/master
 * Window
 Convenient keybindings to resize windows.
 
