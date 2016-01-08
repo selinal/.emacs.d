@@ -35,10 +35,10 @@ boxes around the mode line.
   :init
   (progn
     (load-theme 'cyberpunk t)
-    (set-face-attribute `mode-line nil
-                        :box nil)
-    (set-face-attribute `mode-line-inactive nil
-                        :box nil)))
+;;    (set-face-attribute `mode-line nil :box nil)
+;;    (set-face-attribute `mode-line-inactive nil :box nil)
+)
+)
 #+end_src
 
 I tend to switch themes more often than normal. For example, switching
@@ -49,29 +49,69 @@ a multi-step process with ~disable-theme~ and ~load-theme~. The
 theme I want to go to.
 
 ** Solarized theme
-
 Here's some configuration for [[https://github.com/bbatsov/solarized-emacs/][bbatsov's solarized themes]].
-
 #+begin_src emacs-lisp
+;;(use-package solarized-theme
+;;  :ensure t
+;;  :init (setq solarized-use-variable-pitch nil))
 (use-package solarized-theme
+  :ensure t
+  :if window-system
   :init
-  (setq solarized-use-variable-pitch nil)
-  :ensure t)
+  (progn
+    (setq solarized-use-less-bold t
+          solarized-use-more-italic t
+          solarized-emphasize-indicators nil
+          solarized-distinct-fringe-background nil
+          solarized-high-contrast-mode-line nil))
+  :config
+  (progn
+    (load "solarized-theme-autoloads" nil t)
+    (setq theme-dark 'solarized-dark
+          theme-bright 'solarized-light)))
 #+end_src
 
 ** Monokai theme
-
 #+begin_src emacs-lisp
-(setq monokai-use-variable-pitch nil)
+;;(setq monokai-use-variable-pitch nil)
+(use-package monokai-theme
+  :ensure t
+  :init 
+  (progn 
+    (load-theme 'monokai t)))
 #+end_src
 
 ** Spacegray theme
 #+BEGIN_SRC emacs-lisp
-(setq spacegray-theme nil)
+;;(setq spacegray-theme nil)
+(use-package spacegray-theme
+  :ensure t
+  :init 
+  (progn 
+    (load-theme 'spacegray t)))
 #+END_SRC
 
-** Convenient theme functions
+** Lush theme
+#+BEGIN_SRC emacs-lisp
+;;(setq lush-theme nil)
+(use-package lush-theme
+  :ensure t
+  :init 
+  (progn 
+    (load-theme 'lush t)))
+#+END_SRC
 
+** Abyss theme
+;;#+BEGIN_SRC emacs-lisp
+;;(setq abyss-theme nil)
+;;(use-package abyss-theme
+;;  :ensure t
+;;  :init 
+;;  (progn 
+;;    (load-theme 'abyss t)))
+;;#+END_SRC
+
+** Convenient theme functions
 #+begin_src emacs-lisp
 (defun switch-theme (theme)
   "Disables any currently active themes and loads THEME."
